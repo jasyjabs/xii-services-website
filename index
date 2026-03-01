@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XII Services LLC | Aviation Transport</title>
+    <style>
+        body { background-color: #1A1A1A; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
+        .logo { color: #008080; font-size: 3rem; font-weight: bold; margin-bottom: 20px; }
+        .btn { background: #008080; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; box-shadow: 0 0 15px #008080; }
+        h1 { font-size: 2.5rem; }
+    </style>
+</head>
+<body>
+    <div class="logo">XII SERVICES</div>
+    <h1>#1 In Aviation Transport Services</h1>
+    <p>Leading supplier of aviation parts and services to the global aviation industry.</p>
+    <br><br>
+    <a href="#" class="btn">Request a Quote</a>
+</body>
+</html>
