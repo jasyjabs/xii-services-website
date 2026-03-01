@@ -1,0 +1,157 @@
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13daec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .circuit-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(19, 218, 236, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary/30">
+<div class="relative flex h-screen flex-col overflow-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between px-4 py-4 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50 border-b border-primary/10">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-background-dark">
+<span class="material-symbols-outlined block text-2xl font-bold">flight_takeoff</span>
+</div>
+<h1 class="text-xl font-black tracking-tight text-slate-100">XII <span class="text-primary">SERVICES</span></h1>
+</div>
+<button class="p-2 text-slate-100 hover:bg-primary/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto pb-24 scroll-smooth">
+<!-- Hero Section -->
+<section class="relative h-[420px] w-full flex items-end">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent z-10"></div>
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="A modern jet aircraft taking off at sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8GAzO2Ujl3cfyssioNH--Ts6FH6Q45CnddftmdHIMaDYjFpQjyyDuDoB6zrXOtwphI1MlbYkTtVdYSL2TMW9DQM7m5OzJGW_-9cEIjLxvL4eQM7Jb1fivPXO4Tot_f72QNyoRuSzHXgc9JBP22TR-1ctB4Vo4r1owYqNt5X32n4x3-vqExl7N3FvmG6am6cxaSMa2JYusd4jrwXk4JUWyfuHvchn3geLtMs4vHHJ5ZoqfaTLQXR8xKBpi42WDMVh0Oi6hjVlbfyo');"></div>
+<div class="relative z-20 p-6 w-full">
+<span class="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase rounded-full mb-3 border border-primary/30">Aerospace Solutions</span>
+<h2 class="text-4xl font-black leading-[1.1] text-white mb-4">Aviation Excellence for West Africa</h2>
+<p class="text-slate-300 text-sm leading-relaxed mb-6 max-w-xs">High-impact procurement and maintenance solutions tailored for regional flight operations.</p>
+<div class="flex flex-col gap-3">
+<button class="bg-primary text-background-dark font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+                            Explore Services <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Overview Section -->
+<section class="p-6 circuit-pattern">
+<div class="flex items-center gap-2 mb-4">
+<div class="h-1 w-12 bg-primary rounded-full"></div>
+<span class="text-xs font-bold text-primary uppercase tracking-widest">Company Overview</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Strategic Logistics &amp; Support</h3>
+<p class="text-slate-400 leading-relaxed mb-6">
+                    XII Services LLC provides comprehensive aviation support, specializing in parts procurement and maintenance services tailored specifically for the unique demands of the West African market.
+                </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-slate-800/40 border border-white/5 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">verified</span>
+<h4 class="font-bold text-sm mb-1">Certified</h4>
+<p class="text-xs text-slate-500">Industry standard quality assurance.</p>
+</div>
+<div class="bg-slate-800/40 border border-white/5 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary mb-2">public</span>
+<h4 class="font-bold text-sm mb-1">Regional</h4>
+<p class="text-xs text-slate-500">Specialized in West African routes.</p>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="p-6 bg-slate-900/50">
+<h3 class="text-xl font-bold mb-6 flex items-center justify-between">
+                    Top Product Categories
+                    <span class="text-primary text-xs font-medium">View Catalog</span>
+</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-background-dark p-4 rounded-2xl border border-white/5">
+<div class="w-16 h-16 bg-slate-800 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">earth_engine</span>
+</div>
+<div>
+<h4 class="font-bold">Engine Components</h4>
+<p class="text-xs text-slate-500">Turbine blades, fuel pumps, and sensors.</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-slate-600">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 bg-background-dark p-4 rounded-2xl border border-white/5">
+<div class="w-16 h-16 bg-slate-800 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">settings_input_component</span>
+</div>
+<div>
+<h4 class="font-bold">Avionics Systems</h4>
+<p class="text-xs text-slate-500">Navigation, communication, and displays.</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-slate-600">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 bg-background-dark p-4 rounded-2xl border border-white/5">
+<div class="w-16 h-16 bg-slate-800 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">flight_land</span>
+</div>
+<div>
+<h4 class="font-bold">Landing Gear</h4>
+<p class="text-xs text-slate-500">Hydraulic assemblies and tire systems.</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-slate-600">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-6 size-14 bg-primary text-background-dark rounded-full shadow-xl shadow-primary/30 flex items-center justify-center z-40">
+<span class="material-symbols-outlined font-bold text-3xl">request_quote</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="absolute bottom-0 left-0 right-0 bg-background-dark/95 backdrop-blur-xl border-t border-white/5 px-6 pt-3 pb-8 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">package_2</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Parts</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">build</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Contact</span>
+</a>
+</nav>
+</div>
+</body></html>

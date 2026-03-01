@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Services Showcase - XII Services LLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13daec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#102022",
+                        "card-dark": "#193133",
+                        "accent-dark": "#234548",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .circuit-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(19, 218, 236, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col circuit-bg">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 border-b border-slate-200 dark:border-accent-dark justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">menu</span>
+<h1 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">XII Services LLC</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center h-10 w-10 rounded-full bg-slate-100 dark:bg-accent-dark">
+<span class="material-symbols-outlined text-primary">search</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary text-sm">person</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Page Title -->
+<div class="px-4 pt-6 pb-2">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-1">Inventory &amp; Services</h2>
+<p class="text-2xl font-bold text-slate-900 dark:text-white">Precision Aerospace Solutions</p>
+</div>
+<!-- Product Categories List -->
+<section class="px-4 py-4 space-y-4">
+<!-- Avionics Card -->
+<div class="flex flex-col rounded-xl overflow-hidden shadow-lg bg-white dark:bg-card-dark border border-slate-200 dark:border-accent-dark">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Close up of modern aircraft digital cockpit avionics" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCz0uw0QWqTYJunrtKLLC0G2GjSPi6WsKTx86r90qrlTnbZzbY2b9BNWDOdkJINNtBWCk_u_9lEjQXdLFiHBzlxVlBU032E9vw09sNvWWJI6XLSPmtUS_xKcLUupj2g9b_93HVVAaxxUryTo1vCr58oshP3E4MgxFu-ai-F4rzv5Zen2gHR87SDkQCqidoIFaz7UcKBx62YhWq7-jqMsO3lcBaW86q-XzJOz8HNHBcs-AKXlpm12HhMqbvHMuk6Jp7iuOddcYdrz3k");'></div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Avionics Systems</h3>
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">Ready to Ship</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                        Precision navigation and communication hardware. Fully tested G5000 and legacy unit replacements.
+                    </p>
+<button class="w-full h-12 flex items-center justify-center gap-2 bg-primary text-background-dark font-bold rounded-lg active:scale-95 transition-transform">
+<span>Browse Inventory</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Engines Card -->
+<div class="flex flex-col rounded-xl overflow-hidden shadow-lg bg-white dark:bg-card-dark border border-slate-200 dark:border-accent-dark">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="High performance jet engine turbine core detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaPpGwdr4e48FWifpZGjqE_C_jd_OokLZahFMkNtdPFNkm-hYOmNMIDmdbF7MhfnwjCB9ub9Jb478AittHHCXn-uXg9HRT3O5X5e-45irUjJBa8ce3PhbxgvZqN0__SZRcw1kkQ7VhKrZKZ6fLxYgdEpxbLRIFQdpxOu5kvtIgh9cDm2CfJsxhOgqo4go6-1GUw9PMziNLP_dFiDgTC2s4l_ymeVLwzDwvdiz1Lf1MGjlEdWI1dRG6DZb7ekWmPP_9nu_VBE5hErw");'></div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Turbine Engines</h3>
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">Certified</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                        High-performance powerplants and engine core components. Certified and overhauled units available.
+                    </p>
+<button class="w-full h-12 flex items-center justify-center gap-2 bg-primary text-background-dark font-bold rounded-lg active:scale-95 transition-transform">
+<span>View Units</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Airframe Card -->
+<div class="flex flex-col rounded-xl overflow-hidden shadow-lg bg-white dark:bg-card-dark border border-slate-200 dark:border-accent-dark">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Detailed view of aircraft wing structure and landing gear" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcSflJoZLVTnyf8E_1kxZJzM7Muzz5m_ybVxLitWvz26k2qSjQPvQvl0nHwMMhxdvBWh5qb5wfcLmltamlc1sv5-O0XfCnqVRvhtk8XUP3IU_AtnCoGJtIUv0j0je3gEFUTzkJ4amlSMMujbk2VQixjbWE0QQ1PgkufI8PjcMnBHCa-PjKPYh8UMpX7vaLYsENyrwOnDwz5nAbqRMw9ot3F-YfLCQo5Q-FUiwxIc6KTFSQcoQGjTcxKXC2JHxIg9c0sXROfdZ7gg8");'></div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Airframe Components</h3>
+<span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase">In Stock</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                        Structural assemblies, landing gear components, and control surfaces for commercial fleets.
+                    </p>
+<button class="w-full h-12 flex items-center justify-center gap-2 bg-primary text-background-dark font-bold rounded-lg active:scale-95 transition-transform">
+<span>Search Catalog</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Horizontal Scroll Section -->
+<section class="py-8 bg-slate-100/50 dark:bg-accent-dark/20">
+<div class="px-4 mb-4 flex justify-between items-end">
+<div>
+<h2 class="text-lg font-bold text-slate-900 dark:text-white">Value-Added Services</h2>
+<p class="text-xs text-slate-500 dark:text-slate-400">Integrated aerospace solutions</p>
+</div>
+<span class="text-primary text-xs font-medium">Swipe for more</span>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 pb-4 hide-scrollbar">
+<!-- Service Slide 1 -->
+<div class="min-w-[280px] bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-accent-dark flex flex-col gap-4">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">build_circle</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white">AOG Support</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">24/7 rapid response for Aircraft On Ground situations worldwide.</p>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 mt-auto" href="#">Learn More <span class="material-symbols-outlined text-xs">open_in_new</span></a>
+</div>
+<!-- Service Slide 2 -->
+<div class="min-w-[280px] bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-accent-dark flex flex-col gap-4">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">inventory</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white">Inventory Mgmt</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Consignment and surplus inventory management for operators.</p>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 mt-auto" href="#">Learn More <span class="material-symbols-outlined text-xs">open_in_new</span></a>
+</div>
+<!-- Service Slide 3 -->
+<div class="min-w-[280px] bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-accent-dark flex flex-col gap-4">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white">Quality Assurance</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Rigorous inspection and certification processes for all parts.</p>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 mt-auto" href="#">Learn More <span class="material-symbols-outlined text-xs">open_in_new</span></a>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Call to Action -->
+<section class="p-4 py-10">
+<div class="bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-3">quick_reference_all</span>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Can't find a specific part?</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Our global sourcing network can track down hard-to-find aerospace components.</p>
+<button class="bg-primary text-background-dark font-bold px-8 py-3 rounded-lg w-full">Request a Custom Quote</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-xl border-t border-slate-200 dark:border-accent-dark pb-6 pt-2">
+<div class="flex justify-around items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">inventory_2</span>
+<span class="text-[10px] font-bold">Products</span>
+</a>
+<div class="relative -top-5">
+<button class="bg-primary text-background-dark h-14 w-14 rounded-full flex items-center justify-center shadow-lg shadow-primary/40 border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-[10px] font-medium">Quotes</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="text-[10px] font-medium">Contact</span>
+</a>
+</div>
+</nav>
+</body></html>
